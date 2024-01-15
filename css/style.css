@@ -62,6 +62,10 @@ a{
     margin: 0;
 }
 
+.mobile_logo{
+    display: none;
+}
+
 .header-inner .navbar-brand img{
     margin-left: -40px;
 }
@@ -98,7 +102,7 @@ a{
     margin-bottom: 108px;
 }
 
-.main-content h1{
+.main h1{
     font-family: Bakbak One;
     font-size: 96px;
     font-weight: 400;
@@ -108,13 +112,13 @@ a{
     padding-bottom: 29px;
 }
 
-.main-content h1 span{
+.main h1 span{
     background-image: var(--Linear, linear-gradient(180deg, #F400D2 46%, #4453D0 100%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.main-content p:nth-child(2){
+.main-content p:first-child{
     border-top: 1px solid rgba(255, 255, 255, 0.40);
     max-width: 1397px;
     padding-top: 24px;
@@ -369,6 +373,7 @@ a{
     background: #F1F1F1;
     margin-bottom: 24px;
     border-radius: 0;
+    border: none;
 }
 
 .order-content form input::placeholder, .order-content form select::placeholder{
@@ -460,7 +465,388 @@ a{
 }
 
 @media (max-width: 575.98px) {
+    .wrapper{
+        background-image: url(../img/m_merge_bg.png);
+        margin-bottom: 37px;
+    }
+
+
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+
+    .header .navbar .container-fluid{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_logo{
+        display: flex;
+    }
+
+    .mobile_logo img{
+        margin-left: -20px;
+    }
+
+    .navbar-brand img{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+    
     .header .navbar-toggler{
         display: block;
+        outline: none;
+        border: none;
+        padding: 0;
     }
+
+    .main{
+        margin-bottom: 52px;
+    }
+
+    .main h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px;
+        padding: 0;
+        margin-bottom: 32px;
+    }
+
+    .main-content p:first-child{
+        font-size: 31px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: uppercase;
+        text-align: justify;
+        max-width: 100%;
+        margin-bottom: 16px;
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.40);
+        padding-top: 7px;
+    }
+
+    .main-content p:last-child{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+    }
+
+    .main-reward{
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-bottom: 24px;
+        justify-content: unset;
+        align-items: baseline;
+    }
+
+    .reward-item span{
+        font-size: 8.399px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 11.198px;
+        text-transform: uppercase;
+    }
+
+    .reward-item p{
+        font-size: 19.597px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.397px;
+    }
+
+    .main-button{
+        font-size: 18.446px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 10.698px;
+        padding: 10px 20px;
+    }
+
+    .main-button img{
+        width: 15%;
+    }
+
+    .main-button span{
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .main-button i{
+        font-size: 18.446px;
+    }
+
+    .rotate{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .reward-item{
+        width: fit-content;
+    }
+
+    .reward-item:first-child{
+        padding-right: 7px;
+        margin-bottom: 11px;
+    }
+
+    .reward-item:nth-child(2){
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .main-content{
+        margin-bottom: 53px;
+    }
+
+    .navbar-toggler-icon{
+        background-image:url(../img/togle.png)
+    }
+
+    .nomination-inner h2{
+        font-size: 34.299px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 43.199px;
+        margin-bottom: 34px;
+    }
+
+    .nomination-content{
+        flex-direction: column;
+    }
+
+    .nomination-item{
+        width: 100%;
+        border-radius: 8.383px;
+        padding: 10px 13px;
+        margin-bottom: 23px;
+        max-width: 100%;
+    }
+
+    .nomination-item-content p{
+        font-size: 14.937px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18.671px;
+        text-transform: uppercase;
+        max-width: 178px;
+    }
+
+    .nomination-item-content a{
+        font-size: 12.83px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 17.106px;
+    }
+
+    .nomination-item-number p{
+        font-size: 76.354px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 76.354px;
+    }
+
+    .nomination-item:last-child{
+        margin-bottom: 40px;
+    }
+
+    .juri{
+        padding-top: 35px;
+        padding-bottom: 230px;
+        margin-bottom: 54px;
+        background-image: url(../img/jury_mob_bg.png);
+    }
+
+    .juri h2{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        border: none;
+        text-align: center;
+        margin-bottom: 23px;
+    }
+
+    .juri-card{
+        border-radius: 28.085px;
+        max-width: 100%;
+    }
+
+    .juri-card-content{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 24px;
+    }
+
+    .juri-card-content h3{
+        font-size: 28.085px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 47.043px;
+    }
+
+    .juri-card-content p{
+        font-size: 16.851px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16.851px;
+    }
+
+    .order h2{
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px;
+    }
+
+    .order-content form button{
+        font-size: 18.309px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14.099px;
+        padding: 13px 26px;
+        width: 100%;
+    }
+
+    .order-content form img{
+        width: 15%;
+    }
+
+    .order-content form button span{
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .order-content form button i{
+        font-size: 18.309px;
+    }
+
+    .order{
+        margin-bottom: 72px;
+    }
+
+    .faq{
+        margin-bottom: 72px;
+    }
+
+    .faq_title{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        border: none;
+        margin-bottom: 32px;
+    }
+
+    .accordion-item{
+        border: none;
+    }
+    
+    .faq-content .accordion-button{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+    }
+
+    .accordion-body p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .accordion-body .main-button{
+        font-size: 16px;
+    }
+
+    .accordion-body .main-button i{
+        font-size: 16px;
+    }
+
+    .footer{
+        background-image: none;
+        background-color: #140B21;
+    }
+
+    .footer-inner{
+        padding-top: 38px;
+        padding-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .footer-inner img{
+        margin-right: 0;
+        width: 120%;
+        margin-bottom: 10px;
+    }
+
+    .contacts{
+        text-align: left;
+        padding-top: 48px;
+        border-top: 1px solid rgba(255, 255, 255, 0.30);
+    }
+
+    .contacts a:first-child{
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16.484px;
+    }
+
+    .contacts a:last-child{
+        font-size: 22.551px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12.302px;
+    }
+
+    .btn-close{
+        --bs-btn-close-bg: url(https://i.ibb.co/2SGjKtN/close.png);
+    }
+
+    .offcanvas{
+        background: #140B21;
+    }
+
+    .offcanvas-header .mobile-link img{
+        width: 100%;
+    }
+
+    .offcanvas-body{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .nav-item .nav-link{
+        color: #fff;
+        font-size: 19.597px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22.397px;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -682,6 +682,10 @@ a{
         max-width: 100%;
     }
 
+    .juri-card img{
+        border-radius: 25px;
+    }
+
     .juri-card-content{
         padding-left: 16px;
         padding-right: 16px;
